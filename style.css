@@ -1,0 +1,246 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      margin: 0;
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #60a5fa;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #60a5fa;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Intro Card */
+    .intro-card {
+      background: rgba(255,255,255,0.1); 
+      padding: 50px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      margin: 40px auto;
+      max-width: 800px;
+      opacity: 0;
+      animation: fadeIn 2s forwards; 
+    }
+
+    .intro-card h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #60a5fa;
+    }
+
+    .intro-card p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .intro-metrics {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .intro-metrics div {
+      font-size: 20px;
+      font-weight: bold;
+      color: #93c5fd;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* About Us */
+    .about-card {
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .about-actions {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-actions .btn {
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.about-actions .btn:hover {
+  background: #1d4ed8;
+}
+
+.about-actions .btn.secondary {
+  background: transparent;
+  border: 2px solid #60a5fa;
+  color: #60a5fa;
+}
+
+.about-actions .btn.secondary:hover {
+  background: #60a5fa;
+  color: #0f172a;
+}
+
+
+    /* Filter buttons */
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .filter-buttons button {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .filter-buttons button.active,
+    .filter-buttons button:hover {
+      background: #2563eb;
+    }
+
+    /* Video grid */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    /* Video card */
+    .video-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .video-card:hover {
+      transform: scale(1.03);
+    }
+
+    .video-card video {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .video-info {
+      padding: 15px;
+    }
+
+    .video-info h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+    }
+
+    .video-info p {
+      margin: 0;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* Hire Us Form */
+    .hire-form {
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .hire-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .hire-form input, .hire-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      margin-bottom: 15px;
+    }
+
+    .hire-form button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .hire-form button:hover {
+      background: #1d4ed8;
+    }
+ 

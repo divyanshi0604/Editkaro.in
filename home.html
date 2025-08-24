@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editkaro.in Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <nav>
+    <div class="logo">Editkaro.in</div>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#work">Our Work</a></li>
+      <li><a href="#hire">Hire Us</a></li>
+    </ul>
+  </nav>
+
+
+  <section>
+    <div class="intro-card">
+      <h1>Welcome to Editkaro.in</h1>
+      <p>We craft stunning video edits – from reels to documentaries that get people talking. Let’s bring your vision to life.</p>
+      <div class="intro-metrics">
+        <div>50+ Deliverables</div>
+        <div>100+ Clients</div>
+        <div>200+ Projects</div>
+      </div>
+    </div>
+  </section>
+
+
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about-card">
+    <p>At Editkaro.in, we bring stories to life with stunning edits and creative visuals.
+    Editkaro.in is a social media marketing and video editing studio. From short-form hooks to cinematic documentaries and ROAS-driven eCommerce ads—we shape stories for every screen. 
+    D2C brands, and sports pages. Our workflow blends data-driven scripting with razor-sharp editing and platform-native packaging (titles, thumbs, hooks, captions) to maximize retention and conversion.</p>
+    
+    
+    <div class="about-actions">
+      <a href="#work" class="btn">See Our Work</a>
+      <a href="#hire" class="btn secondary">Hire Us</a>
+    </div>
+  </div>
+</section>
+
+
+  
+  <section id="work">
+    <h2>Our Work</h2>
+
+    
+    <div class="filter-buttons">
+      <button class="active" onclick="filterVideos('all')">All</button>
+      <button onclick="filterVideos('short')">Short-form</button>
+      <button onclick="filterVideos('long')">Long-form</button>
+      <button onclick="filterVideos('gaming')">Gaming</button>
+      <button onclick="filterVideos('football')">Football</button>
+      <button onclick="filterVideos('ads')">Ecommerce Ads</button>
+      <button onclick="filterVideos('documentary')">Documentary</button>
+      <button onclick="filterVideos('color')">Color Grading</button>
+      <button onclick="filterVideos('anime')">Anime</button>
+    </div>
+
+    
+    <div class="video-grid" id="videoGrid">
+      <div class="video-card" data-category="short">
+        <video poster="https://images.unsplash.com/photo-1589391886645-d51941bdbf5d?w=400&h=250&fit=crop" controls></video>
+        <div class="video-info"><h3>Short-form Video</h3><p>Instagram Reel style edit</p></div>
+      </div>
+
+      <div class="video-card" data-category="long">
+        <video poster="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=250&fit=crop" controls></video>
+        <div class="video-info"><h3>Long-form Video</h3><p>YouTube content edit</p></div>
+      </div>
+
+      <div class="video-card" data-category="gaming">
+        <video poster="https://images.unsplash.com/photo-1600861194949-5ff9f41e1a4b?w=400&h=250&fit=crop" controls></video>
+        <div class="video-info"><h3>Gaming Edit</h3><p>High energy montage</p></div>
+      </div>
+
+      <div class="video-card" data-category="football">
+        <video poster="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?w=400&h=250&fit=crop" controls></video>
+        <div class="video-info"><h3>Football Edit</h3><p>Match highlights</p></div>
+      </div>
+
+      <div class="video-card" data-category="ads">
+        <video poster="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=400&h=250&fit=crop" controls></video>
+        <div class="video-info"><h3>Ecommerce Ad</h3><p>Product showcase edit</p></div>
+      </div>
+
+      <div class="video-card" data-category="documentary">
+        <video poster="https://images.unsplash.com/photo-1533228100845-08145b01de14?w=400&h=250&fit=crop" controls></video>
+        <div class="video-info"><h3>Documentary</h3><p>Storytelling style video</p></div>
+      </div>
+
+      <div class="video-card" data-category="color">
+        <video poster="https://images.unsplash.com/photo-1505245208761-ba872912fac0?w=400&h=250&fit=crop" controls></video>
+        <div class="video-info"><h3>Color Grading</h3><p>Before/After demo</p></div>
+      </div>
+
+      <div class="video-card" data-category="anime">
+        <video poster="https://images.unsplash.com/photo-1606112219348-204d7d8b94ee?w=400&h=250&fit=crop" controls></video>
+        <div class="video-info"><h3>Anime Edit</h3><p>AMV Style edit</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hire">
+    <h2>Hire Us</h2>
+    <form class="hire-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="project">Project Details</label>
+      <textarea id="project" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+    <footer>
+    <p>&copy; 2025 Editkaro.in | All Rights Reserved</p>
+    <p>
+      <a href="#about">About</a> |
+      <a href="#work">Our Work</a> |
+      <a href="#hire">Hire Us</a>
+    </p>
+  </footer>
+
+</body>
+</html>
